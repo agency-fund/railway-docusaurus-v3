@@ -15,7 +15,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Use industry standards and frameworks to jumpstart your learning journey.
+        Use industry standards and frameworks to jumpstart your learning journey. 
       </>
     ),
   },
