@@ -80,11 +80,10 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://theagencyfund.substack.com/',
-          label: 'The Agency Fund Blog',
-          position: 'right',
+          label: 'Blog',
+          position: 'left',
         },
       ],
     },
