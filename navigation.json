@@ -1,0 +1,58 @@
+[
+  {
+    "label": "Docs",
+    "type": "tab",
+    "path": "docs",
+    "children": [
+      {
+        "label": "Welcome",
+        "type": "page",
+        "path": "docs/welcome.md"
+      },
+      {
+        "label": "Data and AI",
+        "type": "group",
+        "children": [
+          {
+            "label": "Overview",
+            "type": "page",
+            "path": "docs/data-and-ai/overview.mdx"
+          }
+        ]
+      },
+      {
+        "label": "Product Dev",
+        "type": "group",
+        "children": [
+          {
+            "label": "Overview",
+            "type": "page",
+            "path": "docs/product-development/overview.mdx"
+          }
+        ]
+      },
+      {
+        "label": "Research",
+        "type": "group",
+        "children": [
+          {
+            "label": "Overview",
+            "type": "page",
+            "path": "docs/research/overview.mdx"
+          }
+        ]
+      },
+      {
+        "label": "Outcomes and Impact",
+        "type": "group",
+        "children": [
+          {
+            "label": "Overview",
+            "type": "page",
+            "path": "docs/outcomes-and-impact/overview.mdx"
+          }
+        ]
+      }
+    ]
+  }
+]
