@@ -92,7 +92,7 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Links,
+          title: 'Links',
           items: [
             {
               label: 'Docs',
