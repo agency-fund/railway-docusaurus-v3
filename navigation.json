@@ -11,14 +11,8 @@
       },
       {
         "label": "Theory of Change",
-        "type": "group",
-        "children": [
-          {
-            "label": "Overview",
-            "type": "page",
-            "path": "docs/theory-of-change/overview.mdx"
-          }
-        ]
+        "type": "page",
+        "path": "docs/theory-of-change.mdx"
       },
       {
         "label": "Application / Product",
