@@ -4,4 +4,4 @@ sidebar_position: 1
 
 # Welcome
 
-This is the introduction to the Accelerator Knowledge Base. You can learn about how to become a **learning organization** by operationalizing the [AI Evaluations Framework](https://ai-evaluation-playbook.gitbook.io/home).
+This is the introduction to the Accelerator Knowledge Base. You can learn about how to become a **learning organization** by operationalizing the [AI Evaluations Framework](https://eval.playbook.org.ai/).
