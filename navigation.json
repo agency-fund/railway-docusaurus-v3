@@ -10,6 +10,17 @@
         "path": "docs/welcome.md"
       },
       {
+        "label": "Theory of Change",
+        "type": "group",
+        "children": [
+          {
+            "label": "Overview",
+            "type": "page",
+            "path": "docs/theory-of-change/overview.mdx"
+          }
+        ]
+      },
+      {
         "label": "Data and AI",
         "type": "group",
         "children": [
