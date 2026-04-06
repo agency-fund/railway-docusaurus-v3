@@ -60,7 +60,7 @@
           {
             "label": "Overview",
             "type": "page",
-            "path": "docs/research/overview.mdx"
+            "path": "docs/experiments/overview.mdx"
           }
         ]
       },
