@@ -21,18 +21,7 @@
         ]
       },
       {
-        "label": "Data and AI",
-        "type": "group",
-        "children": [
-          {
-            "label": "Overview",
-            "type": "page",
-            "path": "docs/data-and-ai/overview.mdx"
-          }
-        ]
-      },
-      {
-        "label": "Product Dev",
+        "label": "Application / Product",
         "type": "group",
         "children": [
           {
@@ -43,7 +32,29 @@
         ]
       },
       {
-        "label": "Research",
+        "label": "AI",
+        "type": "group",
+        "children": [
+          {
+            "label": "Overview",
+            "type": "page",
+            "path": "docs/data-and-ai/overview.mdx"
+          }
+        ]
+      },
+      {
+        "label": "Data Platform",
+        "type": "group",
+        "children": [
+          {
+            "label": "Overview",
+            "type": "page",
+            "path": "docs/data-platform/overview.mdx"
+          }
+        ]
+      },
+      {
+        "label": "Experiments",
         "type": "group",
         "children": [
           {
