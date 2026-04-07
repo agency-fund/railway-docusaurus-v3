@@ -15,59 +15,29 @@
         "path": "docs/theory-of-change.mdx"
       },
       {
-        "label": "Application / Product",
-        "type": "group",
-        "children": [
-          {
-            "label": "Overview",
-            "type": "page",
-            "path": "docs/product-development/overview.mdx"
-          }
-        ]
-      },
-      {
-        "label": "AI",
-        "type": "group",
-        "children": [
-          {
-            "label": "Overview",
-            "type": "page",
-            "path": "docs/data-and-ai/overview.mdx"
-          }
-        ]
+        "label": "Intervention",
+        "type": "page",
+        "path": "docs/intervention.mdx"
       },
       {
         "label": "Data Platform",
-        "type": "group",
-        "children": [
-          {
-            "label": "Overview",
-            "type": "page",
-            "path": "docs/data-platform/overview.mdx"
-          }
-        ]
+        "type": "page",
+        "path": "docs/data-platform.mdx"
       },
       {
-        "label": "Experiments",
-        "type": "group",
-        "children": [
-          {
-            "label": "Overview",
-            "type": "page",
-            "path": "docs/experiments/overview.mdx"
-          }
-        ]
+        "label": "AI",
+        "type": "page",
+        "path": "docs/ai.mdx"
+      },
+      {
+        "label": "Experimentation",
+        "type": "page",
+        "path": "docs/experimentation.mdx"
       },
       {
         "label": "Outcomes and Impact",
-        "type": "group",
-        "children": [
-          {
-            "label": "Overview",
-            "type": "page",
-            "path": "docs/outcomes-and-impact/overview.mdx"
-          }
-        ]
+        "type": "page",
+        "path": "docs/outcomes-and-impact.mdx"
       }
     ]
   }
