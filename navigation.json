@@ -15,9 +15,9 @@
         "path": "docs/theory-of-change.mdx"
       },
       {
-        "label": "Intervention",
+        "label": "Implementation",
         "type": "page",
-        "path": "docs/intervention.mdx"
+        "path": "docs/implementation.mdx"
       },
       {
         "label": "Data Platform",
