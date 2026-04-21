@@ -1,8 +1,20 @@
 # Building the Solution
 
-Once you have defined the [theory of change](theory-of-change.mdx) for your intervention, you have to determine how you will implement your intervention.
+Once you have defined the [theory of change](theory-of-change.mdx), you will plan and build your tech-enabled solution.
 
-## Modules
+## What is the Interface?
+
+Before you get started, its important to determine if you are building a new **app**, adding a **feature** to an existing app, or using a **3rd-party communication channel** like WhatsApp or SMS.
+
+For instance, in the farmer advice example earlier, the chatbot is accessible via Whatsapp. Alternatively, you could add the chatbot as a feature to your existing mobile app, or create a new app altogether!
+
+:::tip What is the ideal interface for your users?
+
+Building your own app provides the most flexibility, but it requires a lot more effort to design, build, host, and improve an app. On the flip side, WhatsApp is readily accessibly to most users, but you are constrained by the "chat" form factor. Its important to consider the tradeoffs of each option.
+
+:::
+
+## System Architecture
 
 In order to implement the intervention, you have to identify the module at each level, i.e., the piece of the puzzle, required to enable the intervention.
 
@@ -15,13 +27,21 @@ For instance, the farmer advice intervention would have the following modules:
 | 3 | The advice will influence farmer behaviour              | Farm Inputs Data Collection  |
 | 4 | Farm yields will improve                                | Farm Outputs Data Collection |
 
-:::info Feature in an app vs Entire app
+\<Show ^^ as a flowchart>
 
-Your intervention could be a feature in an existing app, or it could be an entirely new app/interface. For instance, the intervention in the example above uses Whatsapp as the interface. Alternatively, the feature could have been a chatbot in an existing mobile app. Either way, levels 3 and 4 have to be considered and measured the same way because they are a consequence of the intervention.
+:::tip How will your modules
+
+List all planned and existing modules, and draw connections between them. Visualizing them as a flowchart will help you sequence your effort and identify dependencies.
 
 :::
 
-## Model/Platform evaluation
+## Data Platform
+
+Whether you are building a new app or improving an existing one, you will likely already have other data collection systems/initiatives that are producing related data. The new solution could use the existing data (eg. generate recommendations based on household characteristics) as inputs. It will also produce new data.
+
+## User Experience
+
+[Intervention Design Checklist](http://notion.so/agencyfund/Learning-Capability-Checklists-WIP-2cf6311d558d8056a21ccdda99bac56b?source=copy_link#2df6311d558d80faa3a3f9867618ef70)
 
 For the recommendations engine.
 
@@ -31,13 +51,13 @@ Chatbot
 
 Voice agent
 
-## User funnel
-
-For the Whatsapp bot.
-
-
+## Measuring Usage
 
 - Instrument the product to capture events automatically
+
+  - Usage dashboard
+
+  - Funnel analysis
 
 - Use the events data to produce two metrics: activation (used once), and retention (used repeatedly)
 
@@ -45,16 +65,10 @@ For the Whatsapp bot.
 
 - Test these ideas for improvement against these metrics with an A/B test
 
+## Running Experiments
+
+[\[TEMPLATE\] Evidential: Program-Funnel-Hypothesis WorkSheet](https://docs.google.com/spreadsheets/d/1QeH85R0-YfeiHzuwcrcOTOf5kHuUd9ZKuC_i-a_JPeg/edit?gid=1654873953#gid=1654873953)
+
+
+
 ##
-
-## Behavioral Science
-
-[Intervention Design Checklist](http://notion.so/agencyfund/Learning-Capability-Checklists-WIP-2cf6311d558d8056a21ccdda99bac56b?source=copy_link#2df6311d558d80faa3a3f9867618ef70)
-
-## Observability
-
-- Usage dashboard
-
-- Funnel analysis
-
-  - [\[TEMPLATE\] Evidential: Program-Funnel-Hypothesis WorkSheet](https://docs.google.com/spreadsheets/d/1QeH85R0-YfeiHzuwcrcOTOf5kHuUd9ZKuC_i-a_JPeg/edit?gid=1654873953#gid=1654873953)
