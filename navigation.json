@@ -15,9 +15,22 @@
         "path": "docs/theory-of-change.mdx"
       },
       {
-        "label": "Implementation",
+        "label": "Building the Solution",
         "type": "page",
-        "path": "docs/implementation.mdx"
+        "path": "docs/building-the-solution.mdx"
+      },
+      {
+        "label": "Pilots and Rollout",
+        "type": "page",
+        "path": "docs/pilots-and-rollout.mdx"
+      },
+      {
+        "label": "Evaluating Impact",
+        "type": "page",
+        "path": "docs/evaluating-impact.mdx"
+      },
+      {
+        "type": "divider"
       },
       {
         "label": "Data Platform",
@@ -28,16 +41,6 @@
         "label": "AI",
         "type": "page",
         "path": "docs/ai.mdx"
-      },
-      {
-        "label": "Experimentation",
-        "type": "page",
-        "path": "docs/experimentation.mdx"
-      },
-      {
-        "label": "Outcomes and Impact",
-        "type": "page",
-        "path": "docs/outcomes-and-impact.mdx"
       }
     ]
   }
