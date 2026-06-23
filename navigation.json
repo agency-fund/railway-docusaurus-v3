@@ -25,22 +25,137 @@
         "path": "docs/pilots-and-rollout.mdx"
       },
       {
-        "label": "Evaluating Impact",
-        "type": "page",
-        "path": "docs/evaluating-impact.mdx"
-      },
-      {
         "type": "divider"
       },
       {
-        "label": "Data Platform",
-        "type": "page",
-        "path": "docs/data-platform.mdx"
+        "label": "Engineering",
+        "type": "folder",
+        "children": [
+          {
+            "label": "Data Platform",
+            "type": "page",
+            "path": "docs/data-platform.mdx"
+          },
+          {
+            "label": "AI",
+            "type": "page",
+            "path": "docs/ai.mdx"
+          },
+          {
+            "label": "Platform generalization and localization",
+            "type": "page",
+            "path": "docs/engineering/platform-generalization-and-localization.mdx"
+          },
+          {
+            "label": "Product Development",
+            "type": "page",
+            "path": "docs/engineering/product-development.mdx"
+          },
+          {
+            "label": "Hiring",
+            "type": "page",
+            "path": "docs/engineering/hiring.mdx"
+          }
+        ]
       },
       {
-        "label": "AI",
-        "type": "page",
-        "path": "docs/ai.mdx"
+        "label": "Product Management",
+        "type": "folder",
+        "children": [
+          {
+            "label": "Product/Service Analytics",
+            "type": "page",
+            "path": "docs/product/service-analytics.mdx"
+          },
+          {
+            "label": "User Research",
+            "type": "page",
+            "path": "docs/product-management/user-research.mdx"
+          },
+          {
+            "label": "Experimentation",
+            "type": "page",
+            "path": "docs/product-management/experimentation.mdx"
+          },
+          {
+            "label": "Hiring",
+            "type": "page",
+            "path": "docs/product-management/hiring.mdx"
+          }
+        ]
+      },
+      {
+        "label": "Research and Evaluation",
+        "type": "folder",
+        "children": [
+          {
+            "label": "Behavioral Science",
+            "type": "page",
+            "path": "docs/research-and-evaluation/behavioral-science.mdx"
+          },
+          {
+            "label": "Evaluating Impact",
+            "type": "page",
+            "path": "docs/evaluating-impact.mdx"
+          },
+          {
+            "label": "Hiring",
+            "type": "page",
+            "path": "docs/research-and-evaluation/hiring.mdx"
+          }
+        ]
+      },
+      {
+        "label": "GTM",
+        "type": "folder",
+        "children": [
+          {
+            "label": "Discovery",
+            "type": "page",
+            "path": "docs/gtm/discovery.mdx"
+          },
+          {
+            "label": "Marketing",
+            "type": "page",
+            "path": "docs/gtm/marketing.mdx"
+          },
+          {
+            "label": "Pricing",
+            "type": "page",
+            "path": "docs/gtm/pricing.mdx"
+          },
+          {
+            "label": "Sales",
+            "type": "page",
+            "path": "docs/gtm/sales.mdx"
+          },
+          {
+            "label": "Hiring",
+            "type": "page",
+            "path": "docs/gtm/hiring.mdx"
+          }
+        ]
+      },
+      {
+        "label": "Service Delivery",
+        "type": "folder",
+        "children": [
+          {
+            "label": "Solutions Engineering",
+            "type": "page",
+            "path": "docs/service-delivery/solutions-engineering.mdx"
+          },
+          {
+            "label": "Customer Success",
+            "type": "page",
+            "path": "docs/service-delivery/customer-success.mdx"
+          },
+          {
+            "label": "Hiring",
+            "type": "page",
+            "path": "docs/service-delivery/hiring.mdx"
+          }
+        ]
       }
     ]
   }
