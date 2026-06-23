@@ -10,21 +10,6 @@
         "path": "docs/welcome.md"
       },
       {
-        "label": "Theory of Change",
-        "type": "page",
-        "path": "docs/theory-of-change.mdx"
-      },
-      {
-        "label": "Building the Solution",
-        "type": "page",
-        "path": "docs/building-the-solution.mdx"
-      },
-      {
-        "label": "Pilots and Rollout",
-        "type": "page",
-        "path": "docs/pilots-and-rollout.mdx"
-      },
-      {
         "type": "divider"
       },
       {
