@@ -1,7 +1,6 @@
 # compiled output
 /node_modules
 package-lock.json
-yarn.lock
 
 # Production
 /dist
