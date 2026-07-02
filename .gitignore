@@ -1,6 +1,5 @@
 # compiled output
 /node_modules
-package-lock.json
 
 # Production
 /dist

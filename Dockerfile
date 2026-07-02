@@ -11,13 +11,13 @@ FROM node:${NODE_VERSION}-alpine as builder
 
 WORKDIR /usr/src/app
 
-COPY package*.json yarn.lock ./
+COPY package*.json package-lock.json ./
 
-RUN yarn install --frozen-lockfile
+RUN npm ci
 
 COPY . .
 
-RUN yarn build
+RUN npm run build
 
 # ---
 
