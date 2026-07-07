@@ -10,9 +10,7 @@ The resulting log data will allow you to track users as they move through the Us
 
 ## How to do it
 
-Given that this is a standard practice in mainstream tech, it is straightforward to instrument your product to track user actions and events in your product using 3rd party analytics tools (e.g. Amplitude, Mixpanel, Google Analytics).
-
-### 1. User Funnel and Metrics
+### 1. Define the User Funnel and Metrics
 
 First, qualitatively define the stages of your user journey, i.e., describe the user who is: acquired (recruited), activated (onboarded), engaged (using regularly), and retained (coming back).
 
@@ -21,47 +19,34 @@ First, qualitatively define the stages of your user journey, i.e., describe the 
 
 Once stages of the funnel are defined, select industry-standard metrics that match the expected behavior at each stage. If your app is designed for weekly use, track Weekly Active Users (WAU) over time, rather than Daily Active Users (DAU).
 
-### 2. Instrumentation
+Learn more: [User Funnel Metrics](https://eval.playbook.org.ai/product-analytics/level-2-product-evaluation/what-is-the-product-being-evaluated), [User Funnel Playbook](https://docs.google.com/document/d/1dQRuAgau67xvr7Ey2p5HfuovovOXcYfO/edit#heading=h.d24yxp63ml4w)
+
+### 2. Instrument your Product/Service
 
 Next, you must identify the specific events, or user actions, that signal progress through the user funnel. These might include "app opened," "question asked," or "training completed." Select the events that are most consequential to the user's success. The events you select will be used to calculate your metrics. Some events may not be used to calculate a metric, but can still be useful to track, for example if they help you understand the user’s path and identify potential bottlenecks (like clicking the help icon). Your engineering team can implement a third-party analytics tool (e.g., Amplitude, Mixpanel) to capture and log these events automatically.
 
 *Note: Always log a unique User ID with these events; this will enable you to map your product data to data captured elsewhere in other systems.*
 
-### 3. Reports and Dashboards
+### 3. Build a Dashboard
 
-From the event data, your data scientist or engineer can construct the metrics you have selected. For instance, “Time to Activate” can be calculated by counting the number of days between the first and last user actions required for completion of the "activation" stage. You can show these metrics on a dashboard that can be shared across the entire organization.
+From the event data, your data scientist or engineer can construct the metrics you have selected. Ideally, each metric has a directly responsible individual who is accountable for monitoring and improving the value over time.
+
+For instance, “Time to Activate” can be calculated by counting the number of days between the first and last user actions required for completion of the "activation" stage. You can show these metrics on a dashboard that can be shared across the entire organization.
 
 Out of the box, most commercial analytics platforms offer a pre-built reports for [funnel analysis](https://amplitude.com/docs/analytics/charts/funnel-analysis/funnel-analysis-build), [event segmentation](https://amplitude.com/docs/analytics/charts/event-segmentation/event-segmentation-build) and [user journeys/paths](https://amplitude.com/docs/analytics/charts/journeys/journeys-understand-paths).
 
-Ideally, each metric has a directly responsible individual who is accountable for monitoring and improving the value over time.
+Learn more: [Dashboard Design Playbook](https://docs.google.com/document/d/1QIe0t-Yo9yHd8GxCEH9EFZ-q7hUf4kxdrhCDQxEj4wY/edit?tab=t.0#heading=h.lcm1vtdv0qw0), [Dashboard Design Template](https://docs.google.com/spreadsheets/d/11NHfh1mYknz0fE1RyzZWV2YMFpRXUIs6sOQNH2XOhLs/edit?gid=0#gid=0)
 
+  #### Payer/Partner Experience
 
-  - [User Funnel Playbook](https://docs.google.com/document/d/1dQRuAgau67xvr7Ey2p5HfuovovOXcYfO/edit#heading=h.d24yxp63ml4w)
+  Governments/partners view/ should also be able to view and interact with your dashboards. The goal should be to increase external transparency because it will increase trust in your product/service.
 
+## Tools
 
+Given that this is a standard practice in mainstream tech, it is straightforward to instrument your product to track user actions and events in your product using 3rd party analytics tools:
 
-
-
-  App rollout
-
-  Feature rollout with monitoring
-
-  ## Dashboards and reporting
-
-  Show examples of org dashboards
-
-  - [Dashboard Design Playbook](https://docs.google.com/document/d/1QIe0t-Yo9yHd8GxCEH9EFZ-q7hUf4kxdrhCDQxEj4wY/edit?tab=t.0#heading=h.lcm1vtdv0qw0)
-
-  - [Dashboard Design Template - \[Dashboard Name\]](https://docs.google.com/spreadsheets/d/11NHfh1mYknz0fE1RyzZWV2YMFpRXUIs6sOQNH2XOhLs/edit?gid=0#gid=0)
-
-  ## Payer/Partner Experience
-
-  What interface will governments/partner get to look at / interact with the data?
-
-## Recommended Tools
-
-- Amplitude
-
-- Mixpanel
+- [Amplitude](https://amplitude.com/)
+- [Mixpanel](https://mixpanel.com/home/)
+- [Google Analytics](https://developers.google.com/analytics)
 
 ## Case Studies

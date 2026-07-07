@@ -3,29 +3,77 @@ sidebar_position: 3
 ---
 
 # Experimentation
+When you make changes to your product or program, you want to confirm that they are having the desired effect and not causing any negative effect. For example, if you tweak the text on a call-to-action, you may see an immediate rise in the corresponding user event but you want to be certain it was due to the change. Similarly, if you have a large user base, you may want to try the change on a smaller subset of users to confirm it works before you roll it out for everyone.
 
-A/B Testing
+## How to do it
 
-Pre/post is fine if you have high-frequency data
+### Methods
+While [A/B testing](#ab-testing-recommended) is the most common approach, there are multiple methods for testing your product changes.
 
-Holdout to phase a rollout
+<details className="collapsible-heading" open>
+<summary>Pre/post comparison</summary>
 
-[Experiment Design Template](https://docs.google.com/document/d/1JrrCKP2b8cMybk_qQXBhMnFZgx57W8tSAVRWZyIipJU/edit?tab=t.0)
+This is the simplest method: you simply compare the value of a metric before the change with the value of the metric after. For high-impact, obvious updates, this time-series analysis is often enough. If the product change does not have the intended effect, you simply roll it back.
+
+</details>
+
+<details className="collapsible-heading" open>
+<summary>Multivariate testing</summary>
+
+If you need to test multiple feature variations at once—such as changing text, visuals, and timing of content simultaneously—you can use Multivariate Testing. This reveals the combined effect of these changes, helping you find the optimal combination of elements. For this test, you will randomize the roll-out of different combinations of changes across users, and then compare metrics across user groups.
+
+</details>
+
+<details className="collapsible-heading" open>
+<summary>A/B testing (recommended)</summary>
+
+For the most reliable evaluation of a change in your product, we recommend A/B Testing. It’s how tech companies build and refine products, and how digital marketers improve ad performance.
+
+The concept is simple: Rather than rolling out a change to everyone at once, you expose different versions of the product to different randomized groups of users. This allows you to compare the effects of a change directly, or rapidly test multiple ideas at once. There are two flavors of A/B testing:
+
+##### A/B Tests with Planned Assignment (recommended)
+Individual product features or content variants are deployed to randomized user groups. This design works well for testing discrete changes with clear hypotheses. The approach can be extended by testing several competing ideas at the same time, although this requires larger sample sizes to maintain statistical power across all comparison groups.
+
+##### A/B Tests with Self-Assignment
+Users can dynamically self-assign themselves to different variants based on conditional, logic-based paths. For example, some users may choose to attend an in-person training for an app, while others attend an online training. This approach is designed to analyze how different segments of users interact with and respond to the specific variant they chose. Be cautious when analyzing these results: because users self-select, the comparison groups are not random. Differences in performance may stem from the users’ inherent traits (e.g., users choosing in-person training may naturally be more motivated) rather than the effectiveness of the variant itself.
+
+</details>
+
+<details className="collapsible-heading" open>
+<summary>Dynamic assignment</summary>
+
+Instead of randomizing users into fixed A/B groups, you can dynamically route users over time to different product variants, using a method known as multi-armed bandit (MAB) testing. If a product variant results in large improvements in user metrics, the MAB algorithm will progressively allocate more users to that variant over the course of the experiment. Contextual bandits is a further refinement that allocates versions of a product based on a combination of the variant’s performance and the user’s characteristics. These algorithms allow you to maximize success for your users overall, while still running a rigorous experiment. However, they require more sophisticated real-time analysis and assignment infrastructure, and if you also need unbiased estimates of effect, they also require substantially larger sample sizes.
+
+</details>
+
+<details className="collapsible-heading" open>
+<summary>Holdout testing</summary>
+
+To track performance of your product over the long term, you can use Holdout Testing. In this design, a small group of users is kept on a "status quo" version of the product, frozen in time, while the majority receives the accumulation of new, tested features. Comparing metrics across these groups allows you to measure the total value of your improvements over months or years. This approach can be used in combination with any of the evaluation methods above.
+
+</details>
+
+### Randomization
+For the experiment to be valid, randomization is critical: it ensures that any observed final differences across groups can be attributed to the product changes being tested, rather than to pre-existing differences between user groups. The process begins with selecting a random sample of your user base for the experiment. Individuals within this sample are then randomly assigned to different treatment groups.
+
+It is important to select a user sample large enough to ensure your test is representative of the entire user base. The treatment groups must also be large enough to generate statistically significant estimates of test effects.
 
 ## Tools
+The technical implementation of A/B testing has been greatly simplified by modern tooling as randomized assignment can be automated using both open-source frameworks and commercial platforms.
 
-[Evidential](https://docs.evidential.dev/)
+### Open source
+Open source tools like [Evidential](https://docs.evidential.dev/) and [GrowthBook](https://www.growthbook.io/) offer flexibility and control for teams with engineering capabilities. Use this 
 
-[\[TEMPLATE\] Evidential: Program-Funnel-Hypothesis WorkSheet](https://docs.google.com/spreadsheets/d/1QeH85R0-YfeiHzuwcrcOTOf5kHuUd9ZKuC_i-a_JPeg/edit?gid=1654873953#gid=1654873953)
+### Commercial
+Commercial analytics tools like [Amplitude](https://amplitude.com/) and [Mixpanel](https://mixpanel.com/home/) offer ready-to-use experimentation interfaces that automatically track and analyze results using events data. Solutions like [Optimizely](https://www.optimizely.com/) provide visual editors, statistical analysis, and more sophisticated targeting capabilities.
 
 
+
+## Case Studies
 
 - [Kabakoo - Experiment Design Template - Evidential](https://docs.google.com/document/d/1JrrCKP2b8cMybk_qQXBhMnFZgx57W8tSAVRWZyIipJU/edit?tab=t.0#heading=h.jgc3r1qad85j)
-
-- [\[WIP - team is reviewing\] AI4GD A/B Testing Playbook](https://docs.google.com/document/d/1_i1LjHIA3MHBCez1gxvSqZohN9zkwjG09h5L2k4BryQ/edit?tab=t.0#heading=h.wdgt1uho9q75)
-
 - [YouthImpact Iterative A/B Testing Toolkit](https://www.wwhge.org/wp-content/uploads/2025/12/Iterative-AB-Testing-Toolkit-Dec25.pdf)
 
+## Get Started
 
-
-Learn more about [different methods of experimentation](https://eval.playbook.org.ai/level-2-product-evaluation/how-is-level-2-evaluation-performed/methods-for-experimentation-a-b-testing-and-beyond).
+Use this [Experiment Design Template](https://docs.google.com/document/d/1JrrCKP2b8cMybk_qQXBhMnFZgx57W8tSAVRWZyIipJU/edit?tab=t.0) and [Program-Funnel-Hypothesis WorkSheet](https://docs.google.com/spreadsheets/d/1QeH85R0-YfeiHzuwcrcOTOf5kHuUd9ZKuC_i-a_JPeg/edit?gid=1654873953#gid=1654873953) to plan your first experiment.
