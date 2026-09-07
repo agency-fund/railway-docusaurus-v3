@@ -1,4 +1,5 @@
 {
-  "label": "Scale: Increase your reach",
-  "position": 3
+  "label": "Scale Operations",
+  "position": 4,
+  "className": "sidebar-divider-after"
 }
