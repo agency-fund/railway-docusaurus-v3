@@ -1,20 +1,23 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
+sidebar_label: ⚙️ Product Management
 ---
-# User Journey
+# Product Management
 
-## Who is/are your user(s)?
+## User Journey
+
+### Who is/are your user(s)?
 
 A user is anyone who interacts with your system. If you have field teams delivering services to beneficiaries, they’re both your users!
 
-## Map the User Journey
+### Map the User Journey
 
 What are all the steps in your user's journey? Which of those are critical for success?
 
 ![User Journey](/img/user-journey.png)
 *This is a placeholder!*
 
-## Define the User Funnel
+### Define the User Funnel
 
 The user funnel is a representation of the key stages in your user's journey.
 
@@ -22,13 +25,13 @@ The user funnel is a representation of the key stages in your user's journey.
 ![User Funnel](/img/user-funnel.png)
 *This is a placeholder!*
 
-### User Engagement (L2)
+#### User Engagement (L2)
 
 In order to understand if users are actually using your product and finding value, you must instrument your application, setting it up to automatically log specific user actions.
 
 The resulting log data will allow you to track users as they move through the User Funnel: from their first interaction (Activation), to regular usage (Engagement) to long-term commitment or habit formation (Retention). By tracking how users move from their first interaction to long-term habit formation, we can ensure the product actually delivers value in the real world.
 
-#### 1. Define the Funnel Stages and Metrics
+##### 1. Define the Funnel Stages and Metrics
 
 First, qualitatively define the stages of your user journey, i.e., describe the user who is: acquired (recruited), activated (onboarded), engaged (using regularly), and retained (coming back).
 
@@ -39,13 +42,13 @@ Once stages of the funnel are defined, select industry-standard metrics that mat
 
 Learn more: [User Funnel Metrics](https://eval.playbook.org.ai/product-analytics/level-2-product-evaluation/what-is-the-product-being-evaluated)
 
-#### 2. Instrument your Product/Service
+##### 2. Instrument your Product/Service
 
 Next, you must identify the specific events, or user actions, that signal progress through the user funnel. These might include "app opened," "question asked," or "training completed." Select the events that are most consequential to the user's success. The events you select will be used to calculate your metrics. Some events may not be used to calculate a metric, but can still be useful to track, for example if they help you understand the user’s path and identify potential bottlenecks (like clicking the help icon). Your engineering team can implement a third-party analytics tool (e.g., Amplitude, Mixpanel) to capture and log these events automatically.
 
 *Note: Always log a unique User ID with these events; this will enable you to map your product data to data captured elsewhere in other systems.*
 
-#### Recommended Tools
+##### Recommended Tools
 
 We highly recommend using existing mainstream product analytics tools to track user actions and events because they are easy to implement, and come with pre-built reports for [funnel analysis](https://amplitude.com/docs/analytics/charts/funnel-analysis/funnel-analysis-build), [event segmentation](https://amplitude.com/docs/analytics/charts/event-segmentation/event-segmentation-build) and [user journeys/paths](https://amplitude.com/docs/analytics/charts/journeys/journeys-understand-paths). Popular options include:
 
@@ -55,3 +58,53 @@ We highly recommend using existing mainstream product analytics tools to track u
 
 ### Knowledge, Attitudes, and Practices (L3)
 
+## Problem Discovery
+
+What is broken/missing in the user journey?
+
+What do users want? Why?
+
+What do funders/gov/partners want? Why?
+
+Which effort will “move the needle” the most?
+Ignore all other problems!
+
+## Prototype and Validate
+
+Research, Prototype (with AI!), Validate… on repeat, until
+you discover a simple, intuitive UX
+
+Don’t invent → Use established design patterns (WhatsApp?):
+Follow their mental model (“Don’t make me think”)
+Much cheaper to implement, and work better
+
+Does it give the user(s) what they want?
+Kill all prototypes that are not “usable”or “feasible”
+
+## Build and Pilot
+
+Draft a PRD, socialize it widely, get beat up… iterate, iterate, iterate
+
+Prioritization criteria, Buy vs Build, Constraints
+
+Recruit real users to test and validate what you build,
+as you build
+
+Add product telemetry before you pilot so you can immediately track L2 engagement (eg. Amplitude) 
+
+## Experiment (+ Rollout)
+
+Improve L2 and L3 metrics with experimentation
+
+Pre/post comparison, A/B testing, Randomization
+
+Use experimentation tools like Evidential
+
+Review your user funnel to discover more problems
+
+Rollout to all users after you iron out the kinks
+
+## Track Performance
+
+![Example User Funnel](/img/example-user-funnel.png)
+*This is a placeholder!*
